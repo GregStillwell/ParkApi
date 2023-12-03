@@ -1,15 +1,15 @@
 using System.Linq.Expressions;
-using Parks.Interfaces;
-using Parks.Models;
+using ParksApi.Interfaces;
+using ParksApi.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Parks.Repository
+namespace ParksApi.Repository
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected ParksContext RepositoryContext { get; set; }
+        protected ParksApiContext RepositoryContext { get; set; }
 
-        public RepositoryBase(ParksContext repositoryContext)
+        public RepositoryBase(ParksApiContext repositoryContext)
         {
             RepositoryContext = repositoryContext;
         }

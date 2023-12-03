@@ -1,6 +1,6 @@
-using Parks.Models;
+using ParksApi.Models;
 
-namespace Parks.Interfaces
+namespace ParksApi.Interfaces
 {
   public interface IParkRepository : IRepositoryBase<Park>
   {

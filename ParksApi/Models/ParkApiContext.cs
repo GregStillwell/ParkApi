@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Parks.Models
+namespace ParksApi.Models
 {
-  public class ParksContext : DbContext
+  public class ParksApiContext : DbContext
   {
     public DbSet<Park> Parks { get; set; }
 
-    public ParksAPIContext(DbContextOptions<ParksAPIContext> options) : base(options)
+    public ParksApiContext(DbContextOptions<ParksApiContext> options) : base(options)
     {
     }
 

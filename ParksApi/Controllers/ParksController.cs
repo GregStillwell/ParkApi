@@ -1,19 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Parks.Models;
-using Parks.Interfaces;
+using ParksApi.Models;
+using ParksApi.Interfaces;
 using Newtonsoft.Json;
 
-namespace Parks.Controllers
+namespace ParksApi.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
   public class ParksController : ControllerBase
   {
-    private readonly ParksAPIContext _db;
+    private readonly ParksApiContext _db;
     private readonly IParkRepository _repository;
 
-    public ParksController(ParksAPIContext db, IParkRepository repository)
+    public ParksController(ParksApiContext db, IParkRepository repository)
     {
       _db = db;
       _repository = repository;

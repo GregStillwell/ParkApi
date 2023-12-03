@@ -1,4 +1,4 @@
-namespace Parks.Models
+namespace ParksApi.Models
 {
   public class PagedList<T> : List<T>
   {

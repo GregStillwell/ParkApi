@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 
-namespace Parks.Interfaces
+namespace ParksApi.Interfaces
 {
   public interface IRepositoryBase<T>
   {

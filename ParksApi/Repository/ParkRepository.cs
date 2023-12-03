@@ -1,11 +1,11 @@
-using Parks.Interfaces;
-using Parks.Models;
+using ParksApi.Interfaces;
+using ParksApi.Models;
 
-namespace Parks.Repository
+namespace ParksApi.Repository
 {
     public class ParkRepository : RepositoryBase<Park>, IParkRepository
     {
-        public ParkRepository(ParksContext repositoryContext)
+        public ParkApiRepository(ParksApiContext repositoryContext)
             : base(repositoryContext)
         {
         }

@@ -1,13 +1,13 @@
-using Parks.Models;
+using ParksApi.Models;
 using Microsoft.EntityFrameworkCore;
-using Parks.Interfaces;
-using Parks.Repository;
+using ParksApi.Interfaces;
+using ParksApi.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<ParksContext>(
+builder.Services.AddDbContext<ParksApiContext>(
                   dbContextOptions => dbContextOptions
                     .UseMySql(
                       builder.Configuration["ConnectionStrings:DefaultConnection"], 
