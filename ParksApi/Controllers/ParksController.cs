@@ -20,7 +20,7 @@ namespace ParksApi.Controllers
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Park>>> GetParks(string state)
+    public async Task<ActionResult<IEnumerable<Park>>> GetParks(string state, string Name)
     {
       IQueryable<Park> query = _db.Parks.AsQueryable();
 
