@@ -6,7 +6,7 @@ using ParksApi.Models;
 
 #nullable disable
 
-namespace Park.Migrations
+namespace ParksApi.Migrations
 {
     [DbContext(typeof(ParksApiContext))]
     partial class ParksContextModelSnapshot : ModelSnapshot

@@ -7,7 +7,7 @@ using ParksApi.Models;
 
 #nullable disable
 
-namespace Park.Migrations
+namespace ParksApi.Migrations
 {
     [DbContext(typeof(ParksApiContext))]
     [Migration("20231203111919_Initial")]

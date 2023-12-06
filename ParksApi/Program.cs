@@ -16,7 +16,7 @@ builder.Services.AddDbContext<ParksApiContext>(
                   )
                 );
 
-builder.Services.AddScoped<IParkRepository, ParkRepository>();
+builder.Services.AddScoped<IParkRepository, ParkApiRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

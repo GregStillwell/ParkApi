@@ -3,10 +3,9 @@ using ParksApi.Models;
 
 namespace ParksApi.Repository
 {
-    public class ParkRepository : RepositoryBase<Park>, IParkRepository
+    public class ParkApiRepository : RepositoryBase<Park>, IParkRepository
     {
-        public ParkApiRepository(ParksApiContext repositoryContext)
-            : base(repositoryContext)
+        public ParkApiRepository(ParksApiContext repositoryContext) : base(repositoryContext)
         {
         }
 
