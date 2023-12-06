@@ -14,7 +14,7 @@
 
 ## Description
 
-ParksApi is an ASP.NET Core web Api that allows users to use a database with national and state parks, users are able to view all the parks in the database and filter their results through pagination as well as by the state the parks are located in.     
+ParksApi is an ASP.NET Core web Api that allows users to use a database with national and state parks, users are able to view all the parks in the database and filter their results through pagination as well.    
 
 ## Setup Instructions
 
